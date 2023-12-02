@@ -1,0 +1,75 @@
+
+Parte 1. Desarollo téorico. 12 pts
+
+
+1. [3 pts] Según la siguiente función, determine la cantidad de bytes
+           se necesitan reservar en memoria para su ejecución.
+
+
+
+public static int sumaDiagonalPrimaria(int matriz[][]) { 4
+
+        int suma = 0; 4 bytes
+
+
+
+        for (int i = 0; i < matriz.length; i++) { 4
+
+            for (int j = 0; j < matriz[0].length; j++) { 4
+
+                if (i == j) {
+
+                    suma += matriz[i][j];
+
+                }
+
+            }
+
+        }
+
+        return suma;
+
+    }
+
+R/16 bytes
+
+
+
+
+2.[3 pts] Explique que son las clases abstractas y las Interfaces, 
+          describa en que momento de diseño de software se deben emplear 
+
+R/ La clase abstracta es una clase que tiene métodos que están declarados pero 
+no implementados y se crea se utiliza el método abtract ademas que no se puede instanciar directamente y se 
+utiliza para proporcionar una base para otras clases que la extienden.
+.
+
+La interfaz tiene los metodos implementados además que es una clase que solo contiene declaraciones de métodos. Los 
+métodos de una interfaz no tienen cuerpo solo la firma del método.
+
+
+
+
+3.[3 pts] ¿Cuál es la diferencia entre un diseño iterativo y el recursivo desde
+         el punto de vista del diseño de un procedimiento por el programador?
+
+R/ La forma iterativa es mas larga, en otras palabras tiene mas lineas de código, en cambio
+la recursiva hace que tenga menos lineas de codigo, hace que el codigo se vea mas ordenado y elegante basicamente 
+es una funcion que nos permite resolver un problema de forma mas eficaz. 
+
+
+
+
+4.[3 pts] Describa cómo se pueden leer y escribir datos en archivos en Java. 
+Menciona la importancia de manejar excepciones en este contexto.
+
+
+R/ La gestion dinammica de memoria en java y la liberación automatica de archivos basura, 
+lo que permite que la persona se pueda centrar mas en el desarrollo. Es importante manejar los 
+conceptos de excepciones ya que nos pueden ayudar a evitar que un programa se dañe, como por 
+ejemplo si tenemos que manejar contraseñas se puede utilizar una excepcion para evitar que
+cuando el usuario ponga una contraseña incorrecta el programa explote, en cambio nada mas le 
+dira al usuario que lo intente nuevamente.
+
+
+
